@@ -1,1 +1,9 @@
 git clone https://github.com/ekaterinaktsrv/Linux-Exam.git
+cornflakes@cornflakes-VirtualBox:~$ cd 'Linux-Exam'
+cornflakes@cornflakes-VirtualBox:~/Linux-Exam$ cat > Ex4
+cornflakes@cornflakes-VirtualBox:~/Linux-Exam$ git add -A
+cornflakes@cornflakes-VirtualBox:~/Linux-Exam$ git commit -m 'Exam'
+cornflakes@cornflakes-VirtualBox:~/Linux-Exam$ git push -u origin main
+Username for 'https://github.com': ekaterinaktsrv
+Password for 'https://ekaterinaktsrv@github.com': 
+
