@@ -1,0 +1,11 @@
+cornflakes@cornflakes-VirtualBox:~$ sudo adduser examuser
+[sudo] password for cornflakes: 
+cornflakes@cornflakes-VirtualBox:~$ sudo groupadd examgroup
+cornflakes@cornflakes-VirtualBox:~$ sudo groupadd strypes
+cornflakes@cornflakes-VirtualBox:~$ sudo usermod -a -G examgroup,strypes examuser
+cornflakes@cornflakes-VirtualBox:~$ groups examuser
+examuser : examuser examgroup strypes
+cornflakes@cornflakes-VirtualBox:~$ cp /etc/passwd ~
+cornflakes@cornflakes-VirtualBox:~$ sudo chown examuser:strypes passwd
+cornflakes@cornflakes-VirtualBox:~$ sudo chmod 752 passwd
+cornflakes@cornflakes-VirtualBox:~$ sudo chmod u=rwx,g=rx,o=w passwd
