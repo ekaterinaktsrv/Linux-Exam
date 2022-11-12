@@ -1,0 +1,15 @@
+cornflakes@cornflakes-VirtualBox:~$ mkdir 'Linux Exam'
+cornflakes@cornflakes-VirtualBox:~$ cd 'Linux Exam'
+cornflakes@cornflakes-VirtualBox:~/Linux Exam$ mkdir Files Strypes
+cornflakes@cornflakes-VirtualBox:~/Linux Exam$ cd Files
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Files$ touch doc{1..5}.txt report{1..5}.doc results{1..5}.doc statistics{1..2}.xls
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Files$ cd ../
+cornflakes@cornflakes-VirtualBox:~/Linux Exam$ cd Strypes
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ mkdir Day{01..02}
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ cp ~/'Linux Exam'/Files/*.txt ~/'Linux Exam'/Strypes/Day01
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ mv ~/'Linux Exam'/Files/*.doc ~/'Linux Exam'/Strypes/Day02
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ cd ../Files
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Files$ mv statistics1.xls .statistics2.xls
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Files$ cd ../Strypes
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ rm -r Day02
+cornflakes@cornflakes-VirtualBox:~/Linux Exam/Strypes$ 
