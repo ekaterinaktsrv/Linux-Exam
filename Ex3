@@ -1,0 +1,25 @@
+cornflakes@cornflakes-VirtualBox:~$ cat > Fruits.info
+Watermelon#10#0.60
+Apple#29#2.40
+Kiwi#4#4.50
+Raspberry#123#10.20
+Blackberry#456#12.34
+cornflakes@cornflakes-VirtualBox:~$ cut -d '#' -f 1 Fruits.info | sort -t '#' -k 1
+Apple
+Avocado
+Blackberry
+Kiwi
+Raspberry
+Watermelon
+cornflakes@cornflakes-VirtualBox:~$ sort -t '#' -k 2 -n Fruits.info
+Kiwi#4#4.50
+Watermelon#10#0.60
+Apple#29#2.40
+Raspberry#123#10.20
+Avocado#345#9.00
+Blackberry#456#12.34
+cornflakes@cornflakes-VirtualBox:~$  sort -t '#' -k 3 -n Fruits.info | tail -n 1 | cut -d '#' -f 1 > fruit
+cornflakes@cornflakes-VirtualBox:~$ sort -t '#' -k 3 -n Fruits.info | head -n 3
+Watermelon#10#0.60
+Apple#29#2.40
+Kiwi#4#4.50
